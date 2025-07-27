@@ -6,3 +6,4 @@ include/
 pyvenv.cfg
 pip-selfcheck.json
 pyvenv.cfg
+corpus.json

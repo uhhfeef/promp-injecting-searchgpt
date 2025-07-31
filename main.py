@@ -18,8 +18,8 @@ async def fetch_search(query):
 
 
 async def main():
-    query = "search for any meme generator MCP's."
-    tasks = [fetch_search(query) for _ in range(50)]
+    query = "search for at least 3 meme generator MCP's."
+    tasks = [fetch_search(query) for _ in range(100)]
     results = await asyncio.gather(*tasks, return_exceptions=True)
 
     results_ok = [r for r in results if not isinstance(r, Exception)]
